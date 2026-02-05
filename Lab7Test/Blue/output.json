@@ -1,0 +1,339 @@
+﻿{
+  "Task1": [
+    {
+      "Name": "Татьяна",
+      "Surname": "Степанова",
+      "Votes": 1
+    },
+    {
+      "Name": "Никита",
+      "Surname": "Жарков",
+      "Votes": 1
+    },
+    {
+      "Name": "Мирослав",
+      "Surname": "Петров",
+      "Votes": 1
+    },
+    {
+      "Name": "Артем",
+      "Surname": "Тихонов",
+      "Votes": 1
+    },
+    {
+      "Name": "Алевтина",
+      "Surname": "Тихонова",
+      "Votes": 1
+    },
+    {
+      "Name": "Максим",
+      "Surname": "Степанов",
+      "Votes": 3
+    },
+    {
+      "Name": "Марина",
+      "Surname": "Батова",
+      "Votes": 1
+    },
+    {
+      "Name": "Григорий",
+      "Surname": "Сидоров",
+      "Votes": 1
+    },
+    {
+      "Name": "Екатерина",
+      "Surname": "Чехова",
+      "Votes": 1
+    },
+    {
+      "Name": "Оксана",
+      "Surname": "Кристиан",
+      "Votes": 1
+    },
+    {
+      "Name": "Марина",
+      "Surname": "Пономарева",
+      "Votes": 1
+    },
+    {
+      "Name": "Инесса",
+      "Surname": "Смирнова",
+      "Votes": 1
+    },
+    {
+      "Name": "Алиса",
+      "Surname": "Распутина",
+      "Votes": 1
+    },
+    {
+      "Name": "Влада",
+      "Surname": "Степанова",
+      "Votes": 1
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Пономарева",
+      "Votes": 1
+    },
+    {
+      "Name": "Сергей",
+      "Surname": "Тихонов",
+      "Votes": 1
+    },
+    {
+      "Name": "Степан",
+      "Surname": "Иванов",
+      "Votes": 1
+    },
+    {
+      "Name": "Ольга",
+      "Surname": "Зайцева",
+      "Votes": 1
+    },
+    {
+      "Name": "Михаил",
+      "Surname": "Иванов",
+      "Votes": 1
+    },
+    {
+      "Name": "Григорий",
+      "Surname": "Ушаков",
+      "Votes": 1
+    },
+    {
+      "Name": "Максим",
+      "Surname": "Степанов",
+      "Votes": 3
+    },
+    {
+      "Name": "Юрий",
+      "Surname": "Иванов",
+      "Votes": 2
+    },
+    {
+      "Name": "Григорий",
+      "Surname": "Козлов",
+      "Votes": 1
+    },
+    {
+      "Name": "Игорь",
+      "Surname": "Петров",
+      "Votes": 1
+    },
+    {
+      "Name": "Ольга",
+      "Surname": "Тихонова",
+      "Votes": 1
+    },
+    {
+      "Name": "Юрий",
+      "Surname": "Иванов",
+      "Votes": 2
+    },
+    {
+      "Name": "Татьяна",
+      "Surname": "Чехова",
+      "Votes": 1
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Павлова",
+      "Votes": 1
+    },
+    {
+      "Name": "Степан",
+      "Surname": "Павлов",
+      "Votes": 1
+    },
+    {
+      "Name": "Максим",
+      "Surname": "Степанов",
+      "Votes": 3
+    }
+  ],
+
+  "Task2": [
+    {
+      "Name": "Игорь",
+      "Surname": "Смирнов",
+      "TotalScore": 138
+    },
+    {
+      "Name": "Артем",
+      "Surname": "Луговой",
+      "TotalScore": 116
+    },
+    {
+      "Name": "Инесса",
+      "Surname": "Кристиан",
+      "TotalScore": 111
+    },
+    {
+      "Name": "Марина",
+      "Surname": "Свиридова",
+      "TotalScore": 98
+    },
+    {
+      "Name": "Александра",
+      "Surname": "Сидорова",
+      "TotalScore": 94
+    },
+    {
+      "Name": "Николай",
+      "Surname": "Зайцев",
+      "TotalScore": 91
+    },
+    {
+      "Name": "Александр",
+      "Surname": "Петров",
+      "TotalScore": 82
+    },
+    {
+      "Name": "Сергей",
+      "Surname": "Батов",
+      "TotalScore": 76
+    },
+    {
+      "Name": "Мария",
+      "Surname": "Свиридова",
+      "TotalScore": 74
+    },
+    {
+      "Name": "Александр",
+      "Surname": "Петров",
+      "TotalScore": 74
+    }
+  ],
+
+  "Task3": [
+    {
+      "Name": "Инна",
+      "Surname": "Пономарева",
+      "TotalTime": 18,
+      "IsExpelled": false
+    },
+    {
+      "Name": "Дмитрий",
+      "Surname": "Иванов",
+      "TotalTime": 31,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Павлова",
+      "TotalTime": 31,
+      "IsExpelled": false
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Лисицына",
+      "TotalTime": 34,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Мирослав",
+      "Surname": "Лисицын",
+      "TotalTime": 38,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Александра",
+      "Surname": "Козлова",
+      "TotalTime": 44,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Татьяна",
+      "Surname": "Ушакова",
+      "TotalTime": 46,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Иван",
+      "Surname": "Кристиан",
+      "TotalTime": 48,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Юлия",
+      "Surname": "Чехова",
+      "TotalTime": 49,
+      "IsExpelled": true
+    },
+    {
+      "Name": "Юрий",
+      "Surname": "Ушаков",
+      "TotalTime": 62,
+      "IsExpelled": true
+    }
+  ],
+
+  "Task4": [
+    {
+      "Name": "Василек",
+      "TotalScore": 27
+    },
+    {
+      "Name": "Волки",
+      "TotalScore": 24
+    },
+    {
+      "Name": "Быки",
+      "TotalScore": 23
+    },
+    {
+      "Name": "Спарта",
+      "TotalScore": 23
+    },
+    {
+      "Name": "Русь",
+      "TotalScore": 22
+    },
+    {
+      "Name": "Родина",
+      "TotalScore": 22
+    },
+    {
+      "Name": "Бесы",
+      "TotalScore": 22
+    },
+    {
+      "Name": "Локомотив",
+      "TotalScore": 21
+    },
+    {
+      "Name": "Молния",
+      "TotalScore": 21
+    },
+    {
+      "Name": "Спартак",
+      "TotalScore": 19
+    },
+    {
+      "Name": "СКА",
+      "TotalScore": 19
+    },
+    {
+      "Name": "Байкал",
+      "TotalScore": 17
+    }
+  ],
+
+  "Task5": [
+    {
+      "Name": "Динамо",
+      "TotalScore": 7,
+      "TopPlace": 1
+    },
+    {
+      "Name": "Локомотив",
+      "TotalScore": 7,
+      "TopPlace": 2
+    },
+    {
+      "Name": "Спартак",
+      "TotalScore": 1,
+      "TopPlace": 5
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+﻿{
+  "Task1": [
+    {
+      "Surname": "Лисицына",
+      "Club": "Рубин",
+      "FirstJump": 7.39,
+      "SecondJump": 6.96
+    },
+    {
+      "Surname": "Ушакова",
+      "Club": "Василек",
+      "FirstJump": 7.43,
+      "SecondJump": 5.55
+    },
+    {
+      "Surname": "Смирнова",
+      "Club": "Югра",
+      "FirstJump": 6.34,
+      "SecondJump": 3.83
+    },
+    {
+      "Surname": "Луговая",
+      "Club": "Зенит",
+      "FirstJump": 5.50,
+      "SecondJump": 3.18
+    },
+    {
+      "Surname": "Чехова",
+      "Club": "Магнит",
+      "FirstJump": 0.59,
+      "SecondJump": 5.31
+    },
+    {
+      "Surname": "Зайцева",
+      "Club": "Звери",
+      "FirstJump": 8.74,
+      "SecondJump": 0.82
+    },
+    {
+      "Surname": "Сидорова",
+      "Club": "Метеор",
+      "FirstJump": 3.96,
+      "SecondJump": 0.83
+    },
+    {
+      "Surname": "Степанова",
+      "Club": "Магнит",
+      "FirstJump": 8.99,
+      "SecondJump": 1.35
+    },
+    {
+      "Surname": "Сидорова",
+      "Club": "Метеор",
+      "FirstJump": 8.57,
+      "SecondJump": 5.21
+    },
+    {
+      "Surname": "Степанова",
+      "Club": "Рубин",
+      "FirstJump": 3.27,
+      "SecondJump": 8.85
+    }
+  ],
+  "Task2": [
+    {
+      "Name": "Дмитрий",
+      "Surname": "Лисицын",
+      "FirstJump": 3.16,
+      "SecondJump": 2.42
+    },
+    {
+      "Name": "Савелий",
+      "Surname": "Зайцев",
+      "FirstJump": 1.28,
+      "SecondJump": 1.97
+    },
+    {
+      "Name": "Анастасия",
+      "Surname": "Полевая",
+      "FirstJump": 1.41,
+      "SecondJump": 3.22
+    },
+    {
+      "Name": "Мария",
+      "Surname": "Сидорова",
+      "FirstJump": 1.26,
+      "SecondJump": 3.91
+    },
+    {
+      "Name": "Мария",
+      "Surname": "Смирнова",
+      "FirstJump": 1.83,
+      "SecondJump": 3.59
+    },
+    {
+      "Name": "Анастасия",
+      "Surname": "Свиридова",
+      "FirstJump": 3.20,
+      "SecondJump": 2.99
+    },
+    {
+      "Name": "Савелий",
+      "Surname": "Павлов",
+      "FirstJump": 1.73,
+      "SecondJump": 3.54
+    },
+    {
+      "Name": "Оксана",
+      "Surname": "Зайцева",
+      "FirstJump": 2.20,
+      "SecondJump": 2.28
+    },
+    {
+      "Name": "Игорь",
+      "Surname": "Свиридов",
+      "FirstJump": 3.77,
+      "SecondJump": 3.46
+    },
+    {
+      "Name": "Иван",
+      "Surname": "Смирнов",
+      "FirstJump": 2.09,
+      "SecondJump": 3.84
+    }
+  ],
+  "Task3": [
+    {
+      "Name": "Савелий",
+      "Surname": "Полевой",
+      "Marks": [ 3, 4, 4, 3, 3, 5, 5, 4, 4, 0 ]
+    },
+    {
+      "Name": "Игорь",
+      "Surname": "Полевой",
+      "Marks": [ 4, 4, 3, 4, 2, 2, 5, 5, 2, 2 ]
+    },
+    {
+      "Name": "Анастасия",
+      "Surname": "Жаркова",
+      "Marks": [ 2, 2, 2, 5, 2, 4, 5, 4, 0, 0 ]
+    },
+    {
+      "Name": "Ольга",
+      "Surname": "Распутина",
+      "Marks": [ 3, 3, 3, 4, 4, 4, 5, 0, 0, 0 ]
+    },
+    {
+      "Name": "Оксана",
+      "Surname": "Иванова",
+      "Marks": [ 4, 2, 2, 5, 3, 3, 2, 5, 0, 0 ]
+    },
+    {
+      "Name": "Алевтина",
+      "Surname": "Иванова",
+      "Marks": [ 2, 3, 3, 3, 5, 3, 3, 4, 0, 0 ]
+    },
+    {
+      "Name": "Мирослав",
+      "Surname": "Жарков",
+      "Marks": [ 3, 5, 2, 4, 3, 4, 3, 3, 0, 0 ]
+    },
+    {
+      "Name": "Егор",
+      "Surname": "Петров",
+      "Marks": [ 3, 4, 3, 4, 2, 4, 4, 3, 2, 0 ]
+    },
+    {
+      "Name": "Екатерина",
+      "Surname": "Петрова",
+      "Marks": [ 3, 3, 4, 3, 4, 3, 4, 2, 0, 0 ]
+    },
+    {
+      "Name": "Мирослав",
+      "Surname": "Петров",
+      "Marks": [ 5, 3, 5, 4, 5, 2, 4, 0, 0, 0 ]
+    },
+    {
+      "Name": "Егор",
+      "Surname": "Луговой",
+      "Marks": [ 3, 3, 3, 2, 5, 5, 3, 0, 0, 0 ]
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Козлова",
+      "Marks": [ 4, 2, 4, 3, 2, 3, 0, 0, 0, 0 ]
+    },
+    {
+      "Name": "Александр",
+      "Surname": "Полевой",
+      "Marks": [ 3, 2, 4, 5, 2, 4, 4, 0, 0, 0 ]
+    },
+    {
+      "Name": "Оксана",
+      "Surname": "Козлова",
+      "Marks": [ 2, 2, 2, 4, 2, 4, 3, 4, 3, 5 ]
+    },
+    {
+      "Name": "Дарина",
+      "Surname": "Козлова",
+      "Marks": [ 4, 5, 2, 4, 4, 2, 0, 0, 0, 0 ]
+    },
+    {
+      "Name": "Евгения",
+      "Surname": "Луговая",
+      "Marks": [ 3, 3, 2, 3, 4, 5, 3, 5, 4, 2 ]
+    },
+    {
+      "Name": "Дарья",
+      "Surname": "Иванова",
+      "Marks": [ 4, 2, 5, 3, 2, 4, 3, 2, 5, 0 ]
+    },
+    {
+      "Name": "Степан",
+      "Surname": "Козлов",
+      "Marks": [ 4, 5, 4, 3, 5, 4, 4, 3, 4, 4 ]
+    },
+    {
+      "Name": "Светлана",
+      "Surname": "Полевая",
+      "Marks": [ 4, 2, 5, 2, 2, 2, 4, 2, 0, 0 ]
+    },
+    {
+      "Name": "Игорь",
+      "Surname": "Иванов",
+      "Marks": [ 4, 4, 3, 5, 4, 3, 5, 5, 5, 3 ]
+    }
+  ],
+  "Task4": [
+    {
+      "Name": "Мирослав",
+      "Surname": "Тихонов",
+      "Scores": [ 0.5, 1.0, 0.5, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5, 0.5 ]
+    },
+    {
+      "Name": "Артем",
+      "Surname": "Лисицын",
+      "Scores": [ 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0 ]
+    },
+    {
+      "Name": "Алиса",
+      "Surname": "Ушакова",
+      "Scores": [ 0.0, 0.5, 0.0, 1.0, 1.0, 1.0, 0.5, 0.5, 1.0, 0.5 ]
+    },
+    {
+      "Name": "Никита",
+      "Surname": "Батов",
+      "Scores": [ 0.0, 1.0, 0.5, 0.5, 0.5, 1.0, 0.5, 1.0, 0.5, 1.0 ]
+    },
+    {
+      "Name": "Игорь",
+      "Surname": "Ушаков",
+      "Scores": [ 0.5, 1.0, 0.5, 1.0, 1.0, 0.5, 0.0, 0.0, 0.0, 0.0 ]
+    },
+    {
+      "Name": "Екатерина",
+      "Surname": "Тихонова",
+      "Scores": [ 0.5, 1.0, 0.5, 0.0, 0.0, 0.0, 1.0, 0.5, 1.0, 1.0 ]
+    },
+    {
+      "Name": "Екатерина",
+      "Surname": "Луговая",
+      "Scores": [ 0.5, 0.0, 1.0, 0.5, 0.5, 1.0, 1.0, 1.0, 1.0, 0.0 ]
+    },
+    {
+      "Name": "Артем",
+      "Surname": "Иванов",
+      "Scores": [ 0.0, 0.0, 1.0, 0.0, 0.5, 0.5, 0.5, 1.0, 0.5, 0.5 ]
+    },
+    {
+      "Name": "Дмитрий",
+      "Surname": "Распутин",
+      "Scores": [ 0.0, 1.0, 1.0, 1.0, 0.5, 0.0, 1.0, 0.5, 0.0, 1.0 ]
+    },
+    {
+      "Name": "Александр",
+      "Surname": "Полевой",
+      "Scores": [ 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 1.0 ]
+    }
+  ],
+  "Task5": [
+    {
+      "Name": "Югра",
+      "Matches": [
+        {
+          "Goals": 0,
+          "Misses": 2
+        },
+        {
+          "Goals": 0,
+          "Misses": 0
+        },
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 3,
+          "Misses": 0
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 1
+        },
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 3
+        },
+        {
+          "Goals": 5,
+          "Misses": 3
+        }
+      ]
+    },
+    {
+      "Name": "СПБ",
+      "Matches": [
+        {
+          "Goals": 0,
+          "Misses": 3
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 5,
+          "Misses": 2
+        },
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 3,
+          "Misses": 4
+        },
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 3,
+          "Misses": 0
+        },
+        {
+          "Goals": 5,
+          "Misses": 3
+        },
+        {
+          "Goals": 4,
+          "Misses": 1
+        },
+        {
+          "Goals": 2,
+          "Misses": 2
+        }
+      ]
+    },
+    {
+      "Name": "Металлург",
+      "Matches": [
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 4
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 1
+        },
+        {
+          "Goals": 0,
+          "Misses": 0
+        },
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 5,
+          "Misses": 3
+        },
+        {
+          "Goals": 5,
+          "Misses": 3
+        }
+      ]
+    },
+    {
+      "Name": "СКА",
+      "Matches": [
+        {
+          "Goals": 0,
+          "Misses": 2
+        },
+        {
+          "Goals": 4,
+          "Misses": 4
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 5,
+          "Misses": 1
+        },
+        {
+          "Goals": 3,
+          "Misses": 3
+        },
+        {
+          "Goals": 5,
+          "Misses": 0
+        },
+        {
+          "Goals": 0,
+          "Misses": 4
+        },
+        {
+          "Goals": 3,
+          "Misses": 2
+        },
+        {
+          "Goals": 0,
+          "Misses": 3
+        },
+        {
+          "Goals": 4,
+          "Misses": 2
+        }
+      ]
+    },
+    {
+      "Name": "Львы",
+      "Matches": [
+        {
+          "Goals": 5,
+          "Misses": 3
+        },
+        {
+          "Goals": 2,
+          "Misses": 0
+        },
+        {
+          "Goals": 5,
+          "Misses": 2
+        },
+        {
+          "Goals": 1,
+          "Misses": 3
+        },
+        {
+          "Goals": 4,
+          "Misses": 3
+        },
+        {
+          "Goals": 1,
+          "Misses": 3
+        },
+        {
+          "Goals": 0,
+          "Misses": 3
+        },
+        {
+          "Goals": 4,
+          "Misses": 2
+        },
+        {
+          "Goals": 3,
+          "Misses": 3
+        },
+        {
+          "Goals": 3,
+          "Misses": 2
+        }
+      ]
+    },
+    {
+      "Name": "Нефтехим",
+      "Matches": [
+        {
+          "Goals": 3,
+          "Misses": 4
+        },
+        {
+          "Goals": 1,
+          "Misses": 2
+        },
+        {
+          "Goals": 1,
+          "Misses": 1
+        },
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 2
+        },
+        {
+          "Goals": 2,
+          "Misses": 3
+        },
+        {
+          "Goals": 0,
+          "Misses": 3
+        },
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 2,
+          "Misses": 2
+        },
+        {
+          "Goals": 2,
+          "Misses": 3
+        }
+      ]
+    },
+    {
+      "Name": "Ак-барс",
+      "Matches": [
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 1,
+          "Misses": 2
+        },
+        {
+          "Goals": 2,
+          "Misses": 2
+        },
+        {
+          "Goals": 1,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 2
+        },
+        {
+          "Goals": 1,
+          "Misses": 1
+        },
+        {
+          "Goals": 2,
+          "Misses": 0
+        },
+        {
+          "Goals": 2,
+          "Misses": 1
+        },
+        {
+          "Goals": 3,
+          "Misses": 1
+        },
+        {
+          "Goals": 0,
+          "Misses": 2
+        }
+      ]
+    },
+    {
+      "Name": "Магнит",
+      "Matches": [
+        {
+          "Goals": 2,
+          "Misses": 2
+        },
+        {
+          "Goals": 4,
+          "Misses": 4
+        },
+        {
+          "Goals": 0,
+          "Misses": 0
+        },
+        {
+          "Goals": 1,
+          "Misses": 4
+        },
+        {
+          "Goals": 3,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 0
+        },
+        {
+          "Goals": 1,
+          "Misses": 0
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 0,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 1
+        }
+      ]
+    },
+    {
+      "Name": "Урал",
+      "Matches": [
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 2,
+          "Misses": 4
+        },
+        {
+          "Goals": 5,
+          "Misses": 4
+        },
+        {
+          "Goals": 3,
+          "Misses": 4
+        },
+        {
+          "Goals": 4,
+          "Misses": 3
+        },
+        {
+          "Goals": 1,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 2
+        },
+        {
+          "Goals": 0,
+          "Misses": 1
+        },
+        {
+          "Goals": 0,
+          "Misses": 4
+        },
+        {
+          "Goals": 0,
+          "Misses": 2
+        }
+      ]
+    },
+    {
+      "Name": "Василек",
+      "Matches": [
+        {
+          "Goals": 1,
+          "Misses": 3
+        },
+        {
+          "Goals": 5,
+          "Misses": 2
+        },
+        {
+          "Goals": 4,
+          "Misses": 1
+        },
+        {
+          "Goals": 5,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 1
+        },
+        {
+          "Goals": 1,
+          "Misses": 0
+        },
+        {
+          "Goals": 4,
+          "Misses": 4
+        },
+        {
+          "Goals": 1,
+          "Misses": 3
+        },
+        {
+          "Goals": 1,
+          "Misses": 2
+        }
+      ]
+    }
+  ]
+}
