@@ -7,8 +7,7 @@ namespace Lab7.Blue
             private int _votes;
             private string _name;
             private string _surname;
-
-            // свойства
+            
             public int Votes => _votes;
             public string Surname => _surname;
             public string Name => _name;
