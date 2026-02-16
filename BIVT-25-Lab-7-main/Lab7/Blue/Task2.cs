@@ -61,7 +61,7 @@
                     _SecondJump = true;
                 }
             }
-
+            
             public static void Sort(Participant[] array)
             {
                 for (int i = 0; i < array.Length - 1; i++)

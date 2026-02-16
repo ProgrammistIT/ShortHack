@@ -12,11 +12,6 @@
             public int Votes => _votes;
             public string Surname => _surname;
             public string Name => _name;
-            
-            private int VotesSetter
-            {
-                set { _votes = value; }
-            }
 
             public Response(string name, string surname)
             {
@@ -39,7 +34,7 @@
                 for (int i = 0; i < responses.Length; i++)
                 {
                     if (responses[i].Name == _name && responses[i].Surname == _surname)
-                        responses[i].VotesSetter = count;
+                        responses[i]._votes = count;
                 }
                 
                 return count;
