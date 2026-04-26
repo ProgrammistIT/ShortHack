@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация HR</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px;}
+        input[type=text], input[type=password] { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;}
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;}
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <h2>Регистрация HR</h2>
+    <form method="POST">
+        <label for="username">Логин:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="access_key">Ключ доступа:</label><br>
+        <input type="text" id="access_key" name="access_key" required><br><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>

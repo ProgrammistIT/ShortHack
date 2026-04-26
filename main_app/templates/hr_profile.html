@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль HR</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .status-new { color: orange; font-weight: bold;}
+        .status-processed { color: green;}
+    </style>
+</head>
+<body>
+    <h1>Панель HR</h1>
+    <p>Добро пожаловать, HR Пользователь!</p>
+
+    <h2>Заявки</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Имя соискателя</th>
+                <th>Баллы</th>
+                <th>Статус</th>
+                <!-- Добавьте сюда больше полей из applicant_info по мере необходимости -->
+                <th>Опыт (лет)</th>
+                <th>Навыки</th>
+                <th>Образование</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for app in applications %}
+            <tr>
+                <td>{{ app.applicant_info.get('name', 'N/A') }}</td>
+                <td>{{ app.points }}</td>
+                <td class="{% if app.status == 'Новая' %}status-new{% else %}status-processed{% endif %}">{{ app.status }}</td>
+                <!-- Отображение другой информации о соискателе -->
+                <td>{{ app.applicant_info.get('experience_years', 'N/A') }}</td>
+                <td>{{ app.applicant_info.get('skills', 'N/A') }}</td>
+                <td>{{ app.applicant_info.get('education_level', 'N/A') }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="5">Пока нет ни одной заявки.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!--
+        Для обновлений в реальном времени:
+        В реальном приложении вы бы использовали WebSockets для отправки обновлений с сервера
+        в браузер. Для простой демонстрации без сложной настройки можно попросить пользователей
+        обновить страницу или использовать теги meta refresh (не рекомендуется для продакшена).
+        Или реализовать AJAX-опрос.
+    -->
+</body>
+</html>

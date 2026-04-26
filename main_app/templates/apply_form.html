@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подать заявку на вакансию</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px;}
+        input[type=text], input[type=number], textarea, select { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;}
+        button { padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;}
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <h2>Подача Заявки</h2>
+    <form method="POST">
+        <label for="name">Полное Имя:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="experience_years">Опыт работы (лет):</label><br>
+        <input type="number" id="experience_years" name="experience_years" min="0"><br><br>
+
+        <label for="skills">Навыки (например, Python, Java, AWS):</label><br>
+        <input type="text" id="skills" name="skills"><br><br>
+
+        <label for="education_level">Уровень образования:</label><br>
+        <select id="education_level" name="education_level">
+            <option value="Среднее">Среднее</option>
+            <option value="Среднее специальное">Среднее специальное</option>
+            <option value="Высшее (Бакалавр)">Высшее (Бакалавр)</option>
+            <option value="Высшее (Магистратура)">Высшее (Магистратура)</option>
+            <option value="Высшее (Аспирантура/PhD)">Высшее (Аспирантура/PhD)</option>
+        </select><br><br>
+
+        <label for="cover_letter">Сопроводительное письмо:</label><br>
+        <textarea id="cover_letter" name="cover_letter" rows="4"></textarea><br><br>
+
+        <button type="submit">Отправить заявку</button>
+    </form>
+</body>
+</html>
