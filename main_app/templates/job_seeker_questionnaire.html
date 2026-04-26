@@ -76,11 +76,7 @@
 <body>
     <div class="card">
         <h1>Анкета соискателя</h1>
-        <p class="subtitle">После отправки заявка уходит в HR-поток и ранжируется по баллам.</p>
-        <p class="note">
-            Полная занятость: образование (2/1), опыт (1 за полгода), AI (0-4), GitHub (1), портфолио (1).<br>
-            Стажировка: образование (2/1), опыт (1 за полгода), AI (0-6), GitHub (1), портфолио (1).
-        </p>
+        <p class="subtitle">Заполните профиль, чтобы мы могли подобрать вам подходящую роль.</p>
 
         <form method="POST">
             <div class="grid">
@@ -89,18 +85,21 @@
                     <input id="name" name="name" type="text" required>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="text" required>
+                    <label for="candidate_age">Сколько вам лет</label>
+                    <input id="candidate_age" name="candidate_age" type="number" min="14" max="80" required>
                 </div>
             </div>
+            <label for="contact_details">Где вам написать для обратной связи и оставьте контакты</label>
+            <input id="contact_details" name="contact_details" type="text" placeholder="Телефон, Telegram, Email" required>
 
             <h3 class="section-title">Что ищете в первую очередь</h3>
             <div class="grid">
                 <div>
-                    <label for="application_type">Формат</label>
-                    <select id="application_type" name="application_type" required>
-                        <option value="full_time">Полная занятость</option>
-                        <option value="internship">Стажировка</option>
+                    <label for="application_format">Формат</label>
+                    <select id="application_format" name="application_format" required>
+                        {% for value, label in application_formats.items() %}
+                        <option value="{{ value }}">{{ label }}</option>
+                        {% endfor %}
                     </select>
                 </div>
                 <div>
@@ -125,45 +124,98 @@
                 </div>
             </div>
 
-            <h3 class="section-title">Автоматическая оценка</h3>
+            <h3 class="section-title">Опыт и образование</h3>
             <div class="grid">
                 <div>
-                    <label for="official_work_months">Официальный стаж (месяцев)</label>
-                    <input id="official_work_months" name="official_work_months" type="number" min="0" step="6" value="0" required>
+                    <label for="official_experience_years">Укажите количество лет официального трудоустройства данного профиля</label>
+                    <input id="official_experience_years" name="official_experience_years" type="number" min="0" step="0.5" value="0" required>
                 </div>
-                <div>
-                    <label for="education_specialization">Образование по профилю</label>
-                    <select id="education_specialization" name="education_specialization" required>
-                        <option value="it">IT/профильное (2 балла)</option>
-                        <option value="other">Непрофильное (1 балл)</option>
+                <div id="education-block">
+                    <label for="university_name">ВУЗ</label>
+                    <input id="university_name" name="university_name" type="text" placeholder="Например: НИУ ВШЭ">
+                </div>
+                <div id="education-direction-block">
+                    <label for="education_direction">Направление</label>
+                    <input id="education_direction" name="education_direction" type="text" placeholder="Например: Прикладная информатика">
+                </div>
+                <div id="education-completed-block">
+                    <label for="education_completed">Образование окончено</label>
+                    <select id="education_completed" name="education_completed">
+                        <option value="yes">Да</option>
+                        <option value="no">Нет</option>
                     </select>
                 </div>
             </div>
 
-            <h3 class="section-title">Ручная проверка наличия</h3>
-            <div class="grid">
+            <h3 class="section-title">Материалы кандидата</h3>
+            <div class="grid" id="candidate-materials">
                 <div>
-                    <label for="github_link">Ссылка на GitHub (1 балл при наличии)</label>
+                    <label for="github_link">GitHub ссылка</label>
                     <input id="github_link" name="github_link" type="text" placeholder="https://github.com/username">
                 </div>
                 <div>
-                    <label for="portfolio_link">Ссылка на портфолио/резюме (1 балл при наличии)</label>
+                    <label for="portfolio_link">Портфолио ссылка</label>
                     <input id="portfolio_link" name="portfolio_link" type="text" placeholder="https://...">
                 </div>
             </div>
+            <label for="resume_file_link">Резюме файл или ссылка</label>
+            <input id="resume_file_link" name="resume_file_link" type="text" placeholder="Google Drive, PDF, hh, Notion и т.д.">
 
-            <h3 class="section-title">Текстовая часть (AI-анализ)</h3>
-            <label for="experience_description">Описание опыта работы</label>
+            <h3 class="section-title">Текстовая часть</h3>
+            <label for="experience_description">Напишите свой опыт для текстовой оценки</label>
             <textarea id="experience_description" name="experience_description" required></textarea>
 
-            <label for="portfolio_resume_text">Описание портфолио/резюме (текст)</label>
+            <label for="portfolio_resume_text">Опишите резюме или портфолио</label>
             <textarea id="portfolio_resume_text" name="portfolio_resume_text"></textarea>
 
-            <label for="personal_qualities">Личностные качества (для психопрофиля)</label>
+            <label for="personal_qualities">Личностные качества</label>
             <textarea id="personal_qualities" name="personal_qualities"></textarea>
+
+            <h3 class="section-title">Пара коротких вопросов</h3>
+            <label for="habit_answer">Какая рабочая привычка иногда раздражает вас самих</label>
+            <textarea id="habit_answer" name="habit_answer"></textarea>
+
+            <label for="interest_task_answer">Какая задача вызывает у вас здоровый рабочий интерес</label>
+            <textarea id="interest_task_answer" name="interest_task_answer"></textarea>
+
+            <label style="display:flex; gap:8px; align-items:flex-start; font-weight:500;">
+                <input type="checkbox" name="personal_data_consent" value="yes" required style="width:auto; margin-top:3px;">
+                Я даю согласие на обработку персональных данных для подбора вакансии и обратной связи.
+            </label>
 
             <button type="submit">Отправить анкету</button>
         </form>
     </div>
+    <script>
+        const formatSelect = document.getElementById('application_format');
+        const educationBlock = document.getElementById('education-block');
+        const educationDirectionBlock = document.getElementById('education-direction-block');
+        const educationCompletedBlock = document.getElementById('education-completed-block');
+        const universityInput = document.getElementById('university_name');
+        const educationDirectionInput = document.getElementById('education_direction');
+        const educationCompletedSelect = document.getElementById('education_completed');
+        const candidateMaterials = document.getElementById('candidate-materials');
+        const githubInput = document.getElementById('github_link');
+        const portfolioInput = document.getElementById('portfolio_link');
+
+        function syncEducationVisibility() {
+            const isMass = formatSelect.value === 'full_time_mass';
+            educationBlock.style.display = 'block';
+            educationDirectionBlock.style.display = 'block';
+            educationCompletedBlock.style.display = 'block';
+            universityInput.required = true;
+            educationDirectionInput.required = true;
+            educationCompletedSelect.required = true;
+
+            candidateMaterials.style.display = isMass ? 'none' : 'grid';
+            if (isMass) {
+                githubInput.value = '';
+                portfolioInput.value = '';
+            }
+        }
+
+        formatSelect.addEventListener('change', syncEducationVisibility);
+        syncEducationVisibility();
+    </script>
 </body>
 </html>

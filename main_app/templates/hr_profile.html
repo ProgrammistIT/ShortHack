@@ -105,11 +105,11 @@
                         <th>Тип</th>
                         <th>Баллы</th>
                         <th>Статус</th>
-                        <th>Офиц. опыт (мес)</th>
+                        <th>Офиц. опыт (лет)</th>
                         <th>Образование</th>
                         <th>GitHub</th>
                         <th>Портфолио</th>
-                        <th>AI-сводка</th>
+                        <th>Текстовая сводка</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -117,25 +117,43 @@
                     <tr>
                         <td>{{ app.applicant_info.get('name', app.applicant_info.get('username', 'N/A')) }}</td>
                         <td>{{ app.applicant_info.get('target_role', 'N/A') }}</td>
-                        <td>{% if app.applicant_info.get('application_type') == 'internship' %}Стажировка{% else %}Полная занятость{% endif %}</td>
+                        <td>
+                            {% if app.applicant_info.get('application_format') == 'full_time_prof' %}
+                                Полная занятость проф вакансий
+                            {% elif app.applicant_info.get('application_format') == 'full_time_mass' %}
+                                Полная занятость массовых вакансий
+                            {% elif app.applicant_info.get('application_format') == 'internship_prof' %}
+                                Стажировка проф вакансий
+                            {% else %}
+                                N/A
+                            {% endif %}
+                        </td>
                         <td>
                             {{ app.points }}
                             <br>
                             <small>
                                 обр: {{ app.applicant_info.get('education_points', 0) }},
                                 опыт: {{ app.applicant_info.get('experience_points', 0) }},
-                                AI: {{ app.applicant_info.get('ai_points', 0) }},
+                                текст: {{ app.applicant_info.get('text_points', 0) }},
                                 git: {{ app.applicant_info.get('github_points', 0) }},
                                 портф: {{ app.applicant_info.get('portfolio_points', 0) }}
                             </small>
                         </td>
                         <td><span class="{% if app.status == 'Новая' %}status-new{% else %}status-processed{% endif %}">{{ app.status }}</span></td>
-                        <td>{{ app.applicant_info.get('official_work_months', '0') }}</td>
-                        <td>{% if app.applicant_info.get('education_specialization') == 'it' %}IT (2){% else %}Не IT (1){% endif %}</td>
+                        <td>{{ app.applicant_info.get('official_experience_years', '0') }}</td>
+                        <td>
+                            {{ app.applicant_info.get('university_name', 'ВУЗ не указан') }},
+                            {{ app.applicant_info.get('education_direction', 'направление не указано') }}
+                            {% if app.applicant_info.get('education_completed') == 'yes' %}
+                                (окончено, {{ app.applicant_info.get('education_points', 0) }})
+                            {% else %}
+                                (не окончено, {{ app.applicant_info.get('education_points', 0) }})
+                            {% endif %}
+                        </td>
                         <td>{% if app.applicant_info.get('github_link') %}Есть{% else %}Нет{% endif %}</td>
                         <td>{% if app.applicant_info.get('portfolio_link') %}Есть{% else %}Нет{% endif %}</td>
                         <td>
-                            {{ app.applicant_info.get('ai_summary', 'N/A') }}
+                            {{ app.applicant_info.get('text_summary', 'N/A') }}
                             <br>
                             <small>{{ app.applicant_info.get('psych_portrait', '') }}</small>
                         </td>
