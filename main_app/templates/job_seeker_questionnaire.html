@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета соискателя</title>
+    <style>
+        :root {
+            --x5-green: #24a148;
+            --x5-green-dark: #198038;
+            --x5-bg: #f5faf6;
+            --x5-text: #1f2937;
+            --x5-muted: #6b7280;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            background: var(--x5-bg);
+            color: var(--x5-text);
+            padding: 24px 14px;
+        }
+        .card {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #d7e9dd;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
+        }
+        h1 { margin: 0 0 8px; }
+        .subtitle { margin: 0 0 18px; color: var(--x5-muted); }
+        .section-title { margin: 18px 0 10px; color: #1f5130; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+        @media (max-width: 780px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        input[type=text], input[type=number], textarea, select {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #c9d5cf;
+            border-radius: 10px;
+            background: #fbfdfb;
+            margin-bottom: 12px;
+        }
+        textarea { min-height: 90px; resize: vertical; }
+        .note {
+            font-size: 13px;
+            color: var(--x5-muted);
+            margin: 0 0 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: var(--x5-green);
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        button:hover { background: var(--x5-green-dark); }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Анкета соискателя</h1>
+        <p class="subtitle">После отправки заявка уходит в HR-поток и ранжируется по баллам.</p>
+        <p class="note">
+            Полная занятость: образование (2/1), опыт (1 за полгода), AI (0-4), GitHub (1), портфолио (1).<br>
+            Стажировка: образование (2/1), опыт (1 за полгода), AI (0-6), GitHub (1), портфолио (1).
+        </p>
+
+        <form method="POST">
+            <div class="grid">
+                <div>
+                    <label for="name">ФИО</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" required>
+                </div>
+            </div>
+
+            <h3 class="section-title">Что ищете в первую очередь</h3>
+            <div class="grid">
+                <div>
+                    <label for="application_type">Формат</label>
+                    <select id="application_type" name="application_type" required>
+                        <option value="full_time">Полная занятость</option>
+                        <option value="internship">Стажировка</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="target_role">Выбранное направление</label>
+                    <select id="target_role" name="target_role" required>
+                        <optgroup label="Массовые вакансии">
+                            {% for role in mass_vacancies %}
+                            <option value="{{ role }}">{{ role }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        <optgroup label="Профессиональные вакансии">
+                            {% for role in pro_vacancies %}
+                            <option value="{{ role }}">{{ role }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        <optgroup label="Стажировки">
+                            {% for role in internships %}
+                            <option value="{{ role }}">{{ role }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <h3 class="section-title">Автоматическая оценка</h3>
+            <div class="grid">
+                <div>
+                    <label for="official_work_months">Официальный стаж (месяцев)</label>
+                    <input id="official_work_months" name="official_work_months" type="number" min="0" step="6" value="0" required>
+                </div>
+                <div>
+                    <label for="education_specialization">Образование по профилю</label>
+                    <select id="education_specialization" name="education_specialization" required>
+                        <option value="it">IT/профильное (2 балла)</option>
+                        <option value="other">Непрофильное (1 балл)</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3 class="section-title">Ручная проверка наличия</h3>
+            <div class="grid">
+                <div>
+                    <label for="github_link">Ссылка на GitHub (1 балл при наличии)</label>
+                    <input id="github_link" name="github_link" type="text" placeholder="https://github.com/username">
+                </div>
+                <div>
+                    <label for="portfolio_link">Ссылка на портфолио/резюме (1 балл при наличии)</label>
+                    <input id="portfolio_link" name="portfolio_link" type="text" placeholder="https://...">
+                </div>
+            </div>
+
+            <h3 class="section-title">Текстовая часть (AI-анализ)</h3>
+            <label for="experience_description">Описание опыта работы</label>
+            <textarea id="experience_description" name="experience_description" required></textarea>
+
+            <label for="portfolio_resume_text">Описание портфолио/резюме (текст)</label>
+            <textarea id="portfolio_resume_text" name="portfolio_resume_text"></textarea>
+
+            <label for="personal_qualities">Личностные качества (для психопрофиля)</label>
+            <textarea id="personal_qualities" name="personal_qualities"></textarea>
+
+            <button type="submit">Отправить анкету</button>
+        </form>
+    </div>
+</body>
+</html>
