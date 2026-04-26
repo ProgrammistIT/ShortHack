@@ -56,6 +56,52 @@ def register_job_seeker():
     return render_template('register_job_seeker.html')
 
 
+def find_user_by_credentials(user_type, username, password):
+    """Ищет пользователя по типу, логину и паролю."""
+    for user_id, user_data in users.items():
+        if (
+            user_data.get('type') == user_type
+            and user_data.get('username') == username
+            and user_data.get('password') == password
+        ):
+            return user_id
+    return None
+
+
+@app.route('/login/hr', methods=['GET', 'POST'])
+def login_hr():
+    """Вход для HR."""
+    error = None
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        user_id = find_user_by_credentials('hr', username, password)
+        if user_id is None:
+            error = "Неверный логин или пароль."
+        else:
+            return redirect(url_for('hr_profile', user_id=user_id))
+
+    return render_template('login.html', user_type='hr', error=error)
+
+
+@app.route('/login/job_seeker', methods=['GET', 'POST'])
+def login_job_seeker():
+    """Вход для соискателя."""
+    error = None
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        user_id = find_user_by_credentials('job_seeker', username, password)
+        if user_id is None:
+            error = "Неверный логин или пароль."
+        else:
+            return redirect(url_for('job_seeker_profile', user_id=user_id))
+
+    return render_template('login.html', user_type='job_seeker', error=error)
+
+
 # --- Маршруты профилей ---
 
 @app.route('/profile/hr/<int:user_id>')
